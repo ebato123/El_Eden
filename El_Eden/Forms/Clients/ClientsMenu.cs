@@ -282,8 +282,8 @@ namespace El_Eden.Forms.Clients
         private void btnAddClientTp2_Click(object sender, EventArgs e)
         {
             if (tbNameTp2.Text == "") { MessageBox.Show("Debe ingresar el NOMBRE del cliente antes de continuar.", "ADVERTENCIA"); }
-            if (tbAddressTp2.Text == "") { MessageBox.Show("Debe ingresar la DIRECCIÓN del cliente antes de continuar.", "ADVERTENCIA"); }
-            if (tbPhoneTp2.Text == "") { MessageBox.Show("Debe ingresar un NÚMERO DE TELÉFONO del cliente antes de continuar.", "ADVERTENCIA"); }
+            else if (tbAddressTp2.Text == "") { MessageBox.Show("Debe ingresar la DIRECCIÓN del cliente antes de continuar.", "ADVERTENCIA"); }
+            else if (tbPhoneTp2.Text == "") { MessageBox.Show("Debe ingresar un NÚMERO DE TELÉFONO del cliente antes de continuar.", "ADVERTENCIA"); }
             else
             {
                 MySQL.TablesObjects.Client client = new MySQL.TablesObjects.Client(0, firstName, lastName, phoneNumber, email, address, neighborhood, 1);
@@ -291,7 +291,14 @@ namespace El_Eden.Forms.Clients
                 dgvClients.Rows.Clear();
                 loadDgvClients();
                 dgvClients.Refresh();
-            }
+                
+                firstName = "";
+                lastName = "";
+                phoneNumber = "";
+                email = "";
+                address = "";
+                neighborhood = "";
+             }
         }
 
         private void btnSearchTp1_Click(object sender, EventArgs e)

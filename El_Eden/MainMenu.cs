@@ -46,6 +46,13 @@ namespace El_Eden
             clientsMenu.ShowDialog();
             this.Visible = true;
         }
+        private void lbProducts_Click(object sender, EventArgs e)
+        {
+            Forms.Products.ProductsMenu productsMenu = new Forms.Products.ProductsMenu();  
+            this.Visible = false;
+            productsMenu.ShowDialog();
+            this.Visible = true;
+        }
         #endregion
 
         #region UPPER TOOL
@@ -86,5 +93,7 @@ namespace El_Eden
         private void MainMenu_VisibleChanged(object sender, EventArgs e)
         {
         }
+
+
     }
 }

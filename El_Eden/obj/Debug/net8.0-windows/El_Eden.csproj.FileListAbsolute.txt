@@ -143,3 +143,6 @@ C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\
 C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\Debug\net8.0-windows\El_Eden.csproj.Up2Date
 C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\Debug\net8.0-windows\El_Eden.MainMenu.resources
 C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\Debug\net8.0-windows\El_Eden.Forms.Clients.ClientsMenu.resources
+C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\Debug\net8.0-windows\El_Eden.Forms.Products.ProductsMenu.resources
+C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\Debug\net8.0-windows\El_Eden.Properties.Resources.resources
+C:\Users\elian\OneDrive\Escritorio\PROGRAMACIÓN\C#\El_Eden\El_Eden\El_Eden\obj\Debug\net8.0-windows\El_Eden.sourcelink.json

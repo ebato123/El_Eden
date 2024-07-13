@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("El_Eden")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cb3c4dc0a246ecf95c3adb3e3cd1ba5d83e3ccb")]
 [assembly: System.Reflection.AssemblyProductAttribute("El_Eden")]
 [assembly: System.Reflection.AssemblyTitleAttribute("El_Eden")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

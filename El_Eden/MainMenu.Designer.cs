@@ -99,6 +99,7 @@
             resources.ApplyResources(lbProducts, "lbProducts");
             lbProducts.ForeColor = Color.LemonChiffon;
             lbProducts.Name = "lbProducts";
+            lbProducts.Click += lbProducts_Click;
             lbProducts.MouseEnter += label_MouseEnter;
             lbProducts.MouseLeave += label_MouseLeave;
             // 

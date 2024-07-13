@@ -16,5 +16,10 @@ namespace El_Eden.Forms.Products
         {
             InitializeComponent();
         }
+
+        private void tp2Add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

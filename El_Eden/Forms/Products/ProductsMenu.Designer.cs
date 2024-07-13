@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsMenu));
             pnlUpperTool = new Panel();
             btnReturn = new Button();
             btnMinimize = new Button();
@@ -46,21 +47,26 @@
             tbNameTp1 = new TextBox();
             lbNeighborhoodTp1 = new Label();
             lbNameTp1 = new Label();
-            gbSelectOption = new GroupBox();
-            lbOptions = new Label();
-            lbNameTp2 = new Label();
-            lbLastNameTp2 = new Label();
-            tbNameTp2 = new TextBox();
-            tbLastNameTp2 = new TextBox();
-            btnAddClientTp2 = new Button();
             tp2Add = new TabPage();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            richTextBox1 = new RichTextBox();
+            button1 = new Button();
+            btnAddClientTp2 = new Button();
+            tbLastNameTp2 = new TextBox();
+            tbNameTp2 = new TextBox();
+            lbLastNameTp2 = new Label();
+            lbNameTp2 = new Label();
+            gbSelectOption = new GroupBox();
             pictureBox1 = new PictureBox();
+            lbOptions = new Label();
             pnlUpperTool.SuspendLayout();
             gpWelcome.SuspendLayout();
             tcClients.SuspendLayout();
             tp1Search.SuspendLayout();
-            gbSelectOption.SuspendLayout();
             tp2Add.SuspendLayout();
+            gbSelectOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -177,10 +183,10 @@
             // 
             tcClients.Controls.Add(tp1Search);
             tcClients.Controls.Add(tp2Add);
-            tcClients.Location = new Point(16, 25);
+            tcClients.Location = new Point(17, 25);
             tcClients.Name = "tcClients";
             tcClients.SelectedIndex = 0;
-            tcClients.Size = new Size(537, 174);
+            tcClients.Size = new Size(577, 205);
             tcClients.TabIndex = 25;
             // 
             // tp1Search
@@ -196,7 +202,7 @@
             tp1Search.Location = new Point(4, 28);
             tp1Search.Name = "tp1Search";
             tp1Search.Padding = new Padding(3);
-            tp1Search.Size = new Size(529, 142);
+            tp1Search.Size = new Size(569, 173);
             tp1Search.TabIndex = 0;
             tp1Search.Text = "BUSCAR";
             // 
@@ -207,7 +213,7 @@
             btnDeleteTp1.FlatAppearance.BorderSize = 2;
             btnDeleteTp1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDeleteTp1.ForeColor = Color.Red;
-            btnDeleteTp1.Location = new Point(335, 87);
+            btnDeleteTp1.Location = new Point(344, 102);
             btnDeleteTp1.Name = "btnDeleteTp1";
             btnDeleteTp1.Size = new Size(115, 34);
             btnDeleteTp1.TabIndex = 32;
@@ -220,7 +226,7 @@
             btnModifyTp1.FlatAppearance.BorderSize = 2;
             btnModifyTp1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnModifyTp1.ForeColor = Color.LemonChiffon;
-            btnModifyTp1.Location = new Point(204, 87);
+            btnModifyTp1.Location = new Point(213, 102);
             btnModifyTp1.Name = "btnModifyTp1";
             btnModifyTp1.Size = new Size(115, 34);
             btnModifyTp1.TabIndex = 31;
@@ -233,7 +239,7 @@
             btnSearchTp1.FlatAppearance.BorderSize = 2;
             btnSearchTp1.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
             btnSearchTp1.ForeColor = Color.Black;
-            btnSearchTp1.Location = new Point(76, 87);
+            btnSearchTp1.Location = new Point(85, 102);
             btnSearchTp1.Name = "btnSearchTp1";
             btnSearchTp1.Size = new Size(115, 34);
             btnSearchTp1.TabIndex = 20;
@@ -242,14 +248,14 @@
             // 
             // tbNeighborhoodTp1
             // 
-            tbNeighborhoodTp1.Location = new Point(148, 42);
+            tbNeighborhoodTp1.Location = new Point(164, 58);
             tbNeighborhoodTp1.Name = "tbNeighborhoodTp1";
             tbNeighborhoodTp1.Size = new Size(339, 26);
             tbNeighborhoodTp1.TabIndex = 28;
             // 
             // tbNameTp1
             // 
-            tbNameTp1.Location = new Point(39, 42);
+            tbNameTp1.Location = new Point(55, 58);
             tbNameTp1.Name = "tbNameTp1";
             tbNameTp1.Size = new Size(88, 26);
             tbNameTp1.TabIndex = 20;
@@ -259,7 +265,7 @@
             lbNeighborhoodTp1.Font = new Font("Oswald", 9.75F);
             lbNeighborhoodTp1.ForeColor = Color.LemonChiffon;
             lbNeighborhoodTp1.ImeMode = ImeMode.NoControl;
-            lbNeighborhoodTp1.Location = new Point(148, 15);
+            lbNeighborhoodTp1.Location = new Point(164, 31);
             lbNeighborhoodTp1.Name = "lbNeighborhoodTp1";
             lbNeighborhoodTp1.Size = new Size(339, 24);
             lbNeighborhoodTp1.TabIndex = 27;
@@ -271,12 +277,136 @@
             lbNameTp1.Font = new Font("Oswald", 9.75F);
             lbNameTp1.ForeColor = Color.LemonChiffon;
             lbNameTp1.ImeMode = ImeMode.NoControl;
-            lbNameTp1.Location = new Point(39, 16);
+            lbNameTp1.Location = new Point(55, 32);
             lbNameTp1.Name = "lbNameTp1";
             lbNameTp1.Size = new Size(88, 24);
             lbNameTp1.TabIndex = 21;
             lbNameTp1.Text = "ID del Producto";
             lbNameTp1.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // tp2Add
+            // 
+            tp2Add.BackColor = Color.Black;
+            tp2Add.Controls.Add(label2);
+            tp2Add.Controls.Add(textBox1);
+            tp2Add.Controls.Add(label1);
+            tp2Add.Controls.Add(richTextBox1);
+            tp2Add.Controls.Add(button1);
+            tp2Add.Controls.Add(btnAddClientTp2);
+            tp2Add.Controls.Add(tbLastNameTp2);
+            tp2Add.Controls.Add(tbNameTp2);
+            tp2Add.Controls.Add(lbLastNameTp2);
+            tp2Add.Controls.Add(lbNameTp2);
+            tp2Add.Location = new Point(4, 28);
+            tp2Add.Name = "tp2Add";
+            tp2Add.Padding = new Padding(3);
+            tp2Add.Size = new Size(569, 173);
+            tp2Add.TabIndex = 1;
+            tp2Add.Text = "AGREGAR";
+            tp2Add.Click += tp2Add_Click;
+            // 
+            // label2
+            // 
+            label2.Font = new Font("Oswald", 9.75F);
+            label2.ForeColor = Color.LemonChiffon;
+            label2.ImeMode = ImeMode.NoControl;
+            label2.Location = new Point(78, 132);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 24);
+            label2.TabIndex = 45;
+            label2.Text = "Stock";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(124, 132);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(40, 26);
+            textBox1.TabIndex = 44;
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Oswald", 9.75F);
+            label1.ForeColor = Color.LemonChiffon;
+            label1.ImeMode = ImeMode.NoControl;
+            label1.Location = new Point(255, 1);
+            label1.Name = "label1";
+            label1.Size = new Size(296, 24);
+            label1.TabIndex = 43;
+            label1.Text = "Descripción";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(255, 28);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(296, 82);
+            richTextBox1.TabIndex = 42;
+            richTextBox1.Text = "";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LemonChiffon;
+            button1.FlatAppearance.BorderSize = 2;
+            button1.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(255, 124);
+            button1.Name = "button1";
+            button1.Size = new Size(137, 34);
+            button1.TabIndex = 41;
+            button1.Text = "Subir Imágen";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // btnAddClientTp2
+            // 
+            btnAddClientTp2.BackColor = Color.LemonChiffon;
+            btnAddClientTp2.FlatAppearance.BorderSize = 2;
+            btnAddClientTp2.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            btnAddClientTp2.ForeColor = Color.Black;
+            btnAddClientTp2.Location = new Point(414, 124);
+            btnAddClientTp2.Name = "btnAddClientTp2";
+            btnAddClientTp2.Size = new Size(137, 34);
+            btnAddClientTp2.TabIndex = 40;
+            btnAddClientTp2.Text = "Agregar Producto";
+            btnAddClientTp2.UseVisualStyleBackColor = false;
+            // 
+            // tbLastNameTp2
+            // 
+            tbLastNameTp2.Location = new Point(22, 84);
+            tbLastNameTp2.Name = "tbLastNameTp2";
+            tbLastNameTp2.Size = new Size(215, 26);
+            tbLastNameTp2.TabIndex = 32;
+            // 
+            // tbNameTp2
+            // 
+            tbNameTp2.Location = new Point(22, 28);
+            tbNameTp2.Name = "tbNameTp2";
+            tbNameTp2.Size = new Size(215, 26);
+            tbNameTp2.TabIndex = 30;
+            // 
+            // lbLastNameTp2
+            // 
+            lbLastNameTp2.Font = new Font("Oswald", 9.75F);
+            lbLastNameTp2.ForeColor = Color.LemonChiffon;
+            lbLastNameTp2.ImeMode = ImeMode.NoControl;
+            lbLastNameTp2.Location = new Point(22, 57);
+            lbLastNameTp2.Name = "lbLastNameTp2";
+            lbLastNameTp2.Size = new Size(215, 24);
+            lbLastNameTp2.TabIndex = 33;
+            lbLastNameTp2.Text = "Nombre";
+            lbLastNameTp2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lbNameTp2
+            // 
+            lbNameTp2.Font = new Font("Oswald", 9.75F);
+            lbNameTp2.ForeColor = Color.LemonChiffon;
+            lbNameTp2.ImeMode = ImeMode.NoControl;
+            lbNameTp2.Location = new Point(22, 2);
+            lbNameTp2.Name = "lbNameTp2";
+            lbNameTp2.Size = new Size(215, 24);
+            lbNameTp2.TabIndex = 31;
+            lbNameTp2.Text = "ID del Producto";
+            lbNameTp2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // gbSelectOption
             // 
@@ -291,6 +421,16 @@
             gbSelectOption.TabStop = false;
             gbSelectOption.Text = "Seleccione una opción:";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.InactiveCaption;
+            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+            pictureBox1.Location = new Point(613, 25);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(205, 205);
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
+            // 
             // lbOptions
             // 
             lbOptions.BackColor = Color.Transparent;
@@ -301,83 +441,8 @@
             lbOptions.Name = "lbOptions";
             lbOptions.Size = new Size(861, 38);
             lbOptions.TabIndex = 28;
-            lbOptions.Text = "- Buscar Clientes -";
+            lbOptions.Text = "- Productos -";
             lbOptions.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lbNameTp2
-            // 
-            lbNameTp2.Font = new Font("Oswald", 9.75F);
-            lbNameTp2.ForeColor = Color.LemonChiffon;
-            lbNameTp2.ImeMode = ImeMode.NoControl;
-            lbNameTp2.Location = new Point(18, 12);
-            lbNameTp2.Name = "lbNameTp2";
-            lbNameTp2.Size = new Size(166, 24);
-            lbNameTp2.TabIndex = 31;
-            lbNameTp2.Text = "ID del Producto";
-            lbNameTp2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // lbLastNameTp2
-            // 
-            lbLastNameTp2.Font = new Font("Oswald", 9.75F);
-            lbLastNameTp2.ForeColor = Color.LemonChiffon;
-            lbLastNameTp2.ImeMode = ImeMode.NoControl;
-            lbLastNameTp2.Location = new Point(199, 11);
-            lbLastNameTp2.Name = "lbLastNameTp2";
-            lbLastNameTp2.Size = new Size(166, 24);
-            lbLastNameTp2.TabIndex = 33;
-            lbLastNameTp2.Text = "Nombre";
-            lbLastNameTp2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // tbNameTp2
-            // 
-            tbNameTp2.Location = new Point(18, 38);
-            tbNameTp2.Name = "tbNameTp2";
-            tbNameTp2.Size = new Size(166, 26);
-            tbNameTp2.TabIndex = 30;
-            // 
-            // tbLastNameTp2
-            // 
-            tbLastNameTp2.Location = new Point(199, 38);
-            tbLastNameTp2.Name = "tbLastNameTp2";
-            tbLastNameTp2.Size = new Size(166, 26);
-            tbLastNameTp2.TabIndex = 32;
-            // 
-            // btnAddClientTp2
-            // 
-            btnAddClientTp2.BackColor = Color.LemonChiffon;
-            btnAddClientTp2.FlatAppearance.BorderSize = 2;
-            btnAddClientTp2.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
-            btnAddClientTp2.ForeColor = Color.Black;
-            btnAddClientTp2.Location = new Point(381, 30);
-            btnAddClientTp2.Name = "btnAddClientTp2";
-            btnAddClientTp2.Size = new Size(130, 34);
-            btnAddClientTp2.TabIndex = 40;
-            btnAddClientTp2.Text = "Agregar Cliente";
-            btnAddClientTp2.UseVisualStyleBackColor = false;
-            // 
-            // tp2Add
-            // 
-            tp2Add.BackColor = Color.Black;
-            tp2Add.Controls.Add(btnAddClientTp2);
-            tp2Add.Controls.Add(tbLastNameTp2);
-            tp2Add.Controls.Add(tbNameTp2);
-            tp2Add.Controls.Add(lbLastNameTp2);
-            tp2Add.Controls.Add(lbNameTp2);
-            tp2Add.Location = new Point(4, 28);
-            tp2Add.Name = "tp2Add";
-            tp2Add.Padding = new Padding(3);
-            tp2Add.Size = new Size(529, 142);
-            tp2Add.TabIndex = 1;
-            tp2Add.Text = "AGREGAR";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = SystemColors.InactiveCaption;
-            pictureBox1.Location = new Point(569, 25);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 250);
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
             // 
             // ProductsMenu
             // 
@@ -400,9 +465,9 @@
             tcClients.ResumeLayout(false);
             tp1Search.ResumeLayout(false);
             tp1Search.PerformLayout();
-            gbSelectOption.ResumeLayout(false);
             tp2Add.ResumeLayout(false);
             tp2Add.PerformLayout();
+            gbSelectOption.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -437,5 +502,10 @@
         private Label lbLastNameTp2;
         private Label lbNameTp2;
         private PictureBox pictureBox1;
+        private Label label1;
+        private RichTextBox richTextBox1;
+        private Button button1;
+        private Label label2;
+        private TextBox textBox1;
     }
 }
